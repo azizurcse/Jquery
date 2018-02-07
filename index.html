@@ -7,14 +7,17 @@
 	<script>
 		$(Document).ready(function(){
 			$("button").click(function() {
-				$("p#demo").hide();
+				$("div p:first").hide();
 			});
 		});
 	</script>
 </head>
 <body>
 	<button>Click Me!</button>
-	<p id="demo">hello jquery.why you hide me from frontend.</p>
+	<div>
+		<p id="demo">hello jquery.why you hide me from frontend.</p>
 	<p>helloo jquery.why you hide me from frontend.</p>
+	</div>
+	
 </body>
 </html>
