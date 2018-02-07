@@ -6,8 +6,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		$(Document).ready(function(){
-			$("button").click(function() {
-				$("a[demoname='jibon']").hide();
+			$("button").focus(function() {
+				$("#demo").css("background-color","red");
+			});
+			$("button").blur(function() {
+				$("#demo").css("background-color","white");
 			});
 		});
 	</script>
