@@ -3,8 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(Document).ready(function(){
+			$("button").click(function() {
+				$("#demo").hide();
+			});
+		});
+	</script>
 </head>
 <body>
-	<p>hello jquery world</p>
+	<button>Click Me!</button>
+	<p id="demo">hello jquery.why you hide me from frontend.</p>
 </body>
 </html>
