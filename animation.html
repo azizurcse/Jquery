@@ -4,12 +4,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script> 
 $(document).ready(function(){
-    $("button").click(function(){
-        $("div").animate({
-        	height:'toggle',
-        	width:'toggle'
-        });
-    });
+	$("button").click(function(){
+		var div=$("div");
+	div.animate({left:'100px'},"slow");
+	});
+	
 });
 </script> 
 </head>
