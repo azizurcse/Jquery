@@ -5,7 +5,7 @@
 <script> 
 $(document).ready(function(){
 	$("button").click(function(){
-		alert("value:" + $("#demo").val());
+		alert($("#demo").attr("jibon"));
 	});
 	
 });
@@ -14,7 +14,7 @@ $(document).ready(function(){
 <body>
 
 <button>Start Animation</button>
-<input type="text" name="demo" id="demo" value="demo value">
+<input type="text" name="demo" id="demo" jibon="jibon" value="demo value">
 <p id="test">By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
 
 <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
